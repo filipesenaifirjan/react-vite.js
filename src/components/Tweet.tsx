@@ -1,9 +1,9 @@
-type TweetProps ={
-    text?: string;
+type TweetProps = {
+    text: string;
 }
 
-export function Tweet(props: TweetProps) {
+export function Tweet(props:TweetProps) {
     return(
-        <p>{props.text} </p>
+        <p>{props.text}</p>
     );
 }
