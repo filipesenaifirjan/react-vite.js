@@ -10,6 +10,7 @@ function App() {
   ])
 
   function createTweet() {
+    setTweets([...tweets, 'tweet 5'])
 
   }
   return (
