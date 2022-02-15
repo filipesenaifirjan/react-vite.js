@@ -27,8 +27,6 @@ function App() {
       padding: '6px, 12px',
       color: '#fff',
 
-
-
     }}
      
      > Adicionar tweet</button>
