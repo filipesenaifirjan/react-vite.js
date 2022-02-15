@@ -1,5 +1,6 @@
 import { Tweet } from "./components/tweet";
-import{ useState } from "react"
+import{ useState } from "react";
+import './components/App.css';
 
 function App() {
   const [tweets, setTweets]  = useState<string[]>([
@@ -18,7 +19,19 @@ function App() {
     {tweets.map (tweet => {
       return <Tweet text={tweet} />
     })}
-    <button onClick={createTweet}> Adicionar tweet</button>
+    <button
+     onClick={createTweet}
+    style={{
+      backgroundColor: '#8257e6',
+      border:0,
+      padding: '6px, 12px',
+      color: '#fff',
+
+
+
+    }}
+     
+     > Adicionar tweet</button>
     </div>
   );
 }
