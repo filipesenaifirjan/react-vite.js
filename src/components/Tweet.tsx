@@ -1,5 +1,5 @@
 type TweetProps ={
-    text: string;
+    text?: string;
 }
 
 export function Tweet(props: TweetProps) {
