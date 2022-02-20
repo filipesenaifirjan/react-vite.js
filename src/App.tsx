@@ -1,6 +1,7 @@
-import { Tweet } from "./components/tweet";
+import { Tweet } from "./components/Tweet";
 import{ useState } from "react";
 import './components/App.css';
+import { AppRoutes } from "./Routes";
 
 function App() {
   const [tweets, setTweets]  = useState<string[]>([
@@ -15,6 +16,7 @@ function App() {
 
   }
   return (
+    
      <div>  
     {tweets.map (tweet => {
       return <Tweet text={tweet} />
@@ -26,11 +28,12 @@ function App() {
       border:0,
       padding: '6px, 12px',
       color: '#fff',
-
+ 
     }}
      
      > Adicionar tweet</button>
     </div>
+    
   );
 }
 
