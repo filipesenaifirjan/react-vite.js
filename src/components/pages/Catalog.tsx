@@ -1,3 +1,3 @@
 export function Catalog() {
-    return <h1>CAtalog</h1>
+    return <h1>Catalog</h1>
 }
